@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARS */
+$texto:'Jost', sans-serif;
+$tablet: 768px;
+$desktop: 1200px;
+/* VARS */
+
+.header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    & .header_top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & .contacto {
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        & .image {
+            margin:5px;
+            width: 700px;
+            height: 200px;
+            img {
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+            }
+        }
+        & .carts {
+            h3 {
+                font-family: $texto;
+            }
+            #cart-container{
+                display: flex;
+                flex-direction:column ;
+                .productInCart {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                }
+            }
+            p {
+                font-family: $texto;
+            }
+        }
+
+        
+
+    }
+    & nav {
+        padding-top: 10px;
+        text-align: center;
+        & .lista {
+            list-style-type: none;
+            padding: 5px; 
+            background-color: black; 
+            border-radius: 10px;
+            margin-bottom: auto;
+            .lista__item {
+                display: inline;
+                padding: 15px;
+                .itemTexto{
+                    font-size: 30px;
+                    color: aliceblue;
+                    font-family:$texto;
+                    text-decoration: none;
+                    transition: all .25s;
+                    &:hover{
+                        background-color: aliceblue;
+                        color: black;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+#mainOffers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    & .card {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 500px;
+                height: 600px;
+            }
+            span {
+                font-family: $texto;
+            }
+            }    
+            .price-card {
+                font-family: $texto;
+            }
+    }
+}

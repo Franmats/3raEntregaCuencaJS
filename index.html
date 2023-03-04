@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTRO SHOP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./public/scss/main.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+
+            <div class="header_top">
+                <div class="contacto">
+                    <div>Contactos</div>
+                    <div>Contactos</div>
+                </div>
+                <div class="image">
+                    <img src="./public/images/logo.png" alt="logo">
+                </div>
+                <div class="carts">
+                    <h3>CARRITO</h3>
+                    <button id="cesta-carrito"><i class="material-icons ">add_shopping_cart</i><span id="contador-carrito">0</span></button>
+                    <div id="cart-container">
+
+                    </div>
+                    <p class="precioProducto">Precio total: <strong>$<span id="precioTotal"></span></strong></p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="lista">
+                    <li class="lista__item">
+                        <a class="itemTexto" href="" target="_self">HOME</a><!-- ver inicio -->
+                    </li>
+                    <li class="lista__item">
+                        <a class="itemTexto" href="" target="_self">OFERTAS</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="itemTexto" href="" target="_self">NOTEBOOKS</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="itemTexto" href="" target="_self">CELULARES</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="itemTexto" href="" target="_self">PC ESCRITORIO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainOffers">
+        
+    </main>
+    
+    <script src="./datos/stock.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
